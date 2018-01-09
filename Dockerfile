@@ -68,7 +68,7 @@ RUN chmod -R g+rw $SPARK_HOME
 # Install Airflow
 #-------------------------------------------------------------------------------
 
-RUN pip install celery==4.1.0 greenlet==0.4.12 eventlet==0.21.0 filechunkio==1.8 greenlet==0.4.12
+RUN pip install celery==4.1.0 greenlet==0.4.12 eventlet==0.21.0 filechunkio==1.8 greenlet==0.4.12 psycopg2==2.7.3.1
 
 ENV AIRFLOW_HOME=/usr/local/airflow
 RUN useradd -ms /bin/bash -d ${AIRFLOW_HOME} airflow
