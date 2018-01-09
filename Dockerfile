@@ -5,7 +5,7 @@ MAINTAINER cjonesy
 # Install dependencies
 #-------------------------------------------------------------------------------
 RUN yum install -y \
-        python-setuptools python-devel gcc g++ wget libiffi-devel openssl-devel \
+        python-setuptools python-devel gcc gcc-c++ g++ wget libiffi-devel openssl-devel \
         postgresql-devel libxml2 libxml2-devel libxslt libxslt-devel which zip && \
     yum clean all && \
     easy_install pip && \
