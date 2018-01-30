@@ -75,7 +75,7 @@ RUN useradd -ms /bin/bash -d ${AIRFLOW_HOME} airflow
 RUN usermod -a -G spark airflow
 EXPOSE 8080 5555 8793
 
-RUN pip install apache-airflow[hdfs]==1.8.2
+RUN pip install apache-airflow[hdfs]==1.8.1
 
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 RUN chown -R airflow: ${AIRFLOW_HOME}
