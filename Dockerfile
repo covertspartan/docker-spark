@@ -17,7 +17,7 @@ RUN yum install -y \
 #-------------------------------------------------------------------------------
 # Install Java
 #-------------------------------------------------------------------------------
-ENV JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.rpm"
+ENV JAVA_URL="http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.rpm"
 ENV JAVA_HOME=/usr/java/default
 
 RUN wget --no-cookies --no-check-certificate \
