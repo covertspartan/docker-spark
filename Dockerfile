@@ -8,8 +8,7 @@ RUN yum install -y \
         python-setuptools python-devel gcc wget libiffi-devel openssl-devel \
         postgresql-devel libxml2 libxml2-devel libxslt libxslt-devel which zip && \
     yum clean all && \
-    easy_install pip && \
-    pip install --upgrade setuptools pip && \
+    easy_install pip==8.0.0 && \
     rm /etc/localtime && \
     ln -s /usr/share/zoneinfo/America/Chicago /etc/localtime
 
